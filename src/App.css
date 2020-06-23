@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&family=Ubuntu&display=swap');
 
+:root {
+  --head-color: #a8df65;
+  --web-color: #1b6ca8;
+}
+
+
 * {
   font-family: 'Montserrat',
     sans-serif;
@@ -27,7 +33,7 @@ h1 {
   font-size: 8rem;
   letter-spacing: 0.1rem;
   font-style: italic;
-  color: #a8df65;
+  color: var(--head-color);
   text-transform: uppercase;
   margin: 4rem 0;
 }
@@ -127,14 +133,17 @@ h1 {
 
 .recipe a {
   font-size: 1.8rem;
-  color: #40b48e;
+  font-weight: bold;
+  padding: 1em 0 1em;
+  color: var(--web-color);
 }
 
 .recipe button {
   font-size: 2rem;
+  font-weight: bold;
   text-transform: uppercase;
   color: #fff;
-  background-color: #40b48e;
+  color: var(--head-color);
   border: none;
   border-radius: 0.5rem;
   height: 3rem;
