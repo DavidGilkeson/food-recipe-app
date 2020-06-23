@@ -4,6 +4,7 @@ import Recipe from './components/Recipes';
 import Alert from './components//Alert';
 import { v4 as uuidv4 } from 'uuid';
 import './App.css';
+require('dotenv').config();
 
 const App = () => {
   const [query, setQuery] = useState('');
