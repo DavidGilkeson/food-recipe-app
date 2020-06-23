@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
-import Recipe from '../components/Recipes';
+import Recipe from './components/Recipes';
 import './App.css';
 
 const App = () => {
@@ -27,19 +27,21 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1> Recipe Search </h1>
+      <h1> Recipe Search </h1>{' '}
       <form className="search-form" onSubmit={onSubmit}>
         <input
           type="text"
           placeholder="Search Food"
           autoComplete="off"
           onChange={onChange}
-        />
+        />{' '}
         <input type="submit" value="search" />
-      </form>
+      </form>{' '}
       <div className="recipes">
-        {recipes !== [] && recipes.map((recipe) => <Recipe recipe={recipe} />)}
-      </div>
+        {' '}
+        {recipes !== [] &&
+          recipes.map((recipe) => <Recipe recipe={recipe} />)}{' '}
+      </div>{' '}
     </div>
   );
 };
