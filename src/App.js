@@ -34,14 +34,12 @@ const App = () => {
           placeholder="Search Food"
           autoComplete="off"
           onChange={onChange}
-        />{' '}
+        />
         <input type="submit" value="search" />
-      </form>{' '}
+      </form>
       <div className="recipes">
-        {' '}
-        {recipes !== [] &&
-          recipes.map((recipe) => <Recipe recipe={recipe} />)}{' '}
-      </div>{' '}
+        {recipes !== [] && recipes.map((recipe) => <Recipe recipe={recipe} />)}
+      </div>
     </div>
   );
 };
